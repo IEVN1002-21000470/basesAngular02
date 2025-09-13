@@ -1,4 +1,6 @@
-<div>
+<div class="container">
+  <div class="rog">
+    <!--<div>
   <h1>Hola mundo</h1>
 <h2>{{ title }}</h2>
 </div><br>
@@ -9,7 +11,15 @@
   el doble de 3 es {{duplicaNumero(3)}}
 </div><br>
 <div>
-  {{pelicula.titulo}} - {{pelicula.anio}}
+  <h1> {{pelicula.titulo | uppercase }} </h1>
+  <h2> {{pelicula.anio | date:'dd-MMMM-yyyy' }} </h2>
+  <h3> {{pelicula.precio | currency }} </h3>
+</div>-->
+
+
+<app-heroes-list/>
+<router-outlet />
+
+</div>
 </div>
 
-<router-outlet />

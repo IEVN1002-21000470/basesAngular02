@@ -15,7 +15,8 @@ export class AppComponent {
 
   pelicula = {
     titulo: 'Batman',
-    anio: 2022
-    
+    anio: new Date(), //2022
+    precio: 2500,
+
   }
 }
