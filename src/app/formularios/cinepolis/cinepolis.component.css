@@ -1,0 +1,10 @@
+.color-Texto{
+  color: #ffffff;
+  font-size: 35px;
+  font-family: cursive;
+}
+
+.cambio-btn:hover{
+  background-color: red;
+  color: black;
+}

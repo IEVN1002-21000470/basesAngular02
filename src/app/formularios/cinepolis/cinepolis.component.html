@@ -1,0 +1,48 @@
+<div class="FondoCine">
+  <div class="container py-5">
+    <h1 class="text-center mb-4 color-Texto">Información General</h1>
+    <!--<img src="/src/assets/cinepolis.png" alt="Logo" class="img-fluid">-->
+    <div class="row g-4">
+      <div class="col-md-4">
+        <h5 class="card-title color-Texto">Contendor Entradas</h5>
+        <div class="card h-100 shadow-sm card-transparente">
+          <div class="card-body">
+            <label class="card-title">Nombre: </label><br>
+            <input type="text" class="form-control" id="nombre" [(ngModel)]="nombre" name="nombre"
+              placeholder="Ingresa tu nombre"><br>
+            <label for="" class="card-title">Cantidad Compradores: </label><br>
+            <input type="number" class="form-control" id="CantidadCompradores" [(ngModel)]="CantidadCompradores"><br>
+            <label for="" class="card-title">Tarjeta cineco </label><br>
+            <input type="radio" id="" value="Si" [(ngModel)]="Operacion_si_no">Si<br>
+            <input type="radio" id="" value="No" [(ngModel)]="Operacion_si_no">No<br>
+            <label for="" class="card-title">Cantidad de boletos</label><br>
+            <input type="number" class="form-control" [(ngModel)]="CantidadBoletos">
+
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <h5 class="card-title color-Texto"> contenedor Salidas</h5>
+        <div class="card h-100 shadow-sm card-transparente">
+          <div class="card-body">
+            <label for="" class="card-title">Valor a Pagar: </label><br>
+            <h2>$: {{ValorPagar}}</h2>
+            <input type="number" class="form-control" [(ngModel)]="ValorPagar" id="ID_Pago">
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <h5 class="card-title color-Texto"> contenedor Acciones:</h5>
+        <div class="card h-100 shadow-sm card-transparente">
+          <div class="card-body">
+            <button type="button" class="btn btn-primary cambio-btn" (click)="Pago()">Procesar</button><br><br>
+
+            <button class="btn btn-primary cambio-btn">Salir</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -3,27 +3,27 @@
     <div class="mb-3">
       <div class="form-group pt-4">
         <label for="num1" class="form-label">Numero 1</label>
-        <input type="text" class="form-control" id="num1" [(ngModel)]="num1" name="num1">
+        <input type="number" class="form-control" id="num1" [(ngModel)]="num1" name="num1">
 
       </div>
       <div class="form-group pt-4">
         <label for="num2" class="form-label">Numero 2</label>
-        <input type="text" class="form-control" id="num2" [(ngModel)]="num2" name="num2">
+        <input type="number" class="form-control" id="num2" [(ngModel)]="num2" name="num2">
 
       </div>
       <div class="form-group">
-        <!--<button class="btn btn-primary mt-3" (click)="sumar()">sumar</button>-->
+        <button type="button" class="btn btn-primary mt-3" (click)="Calcula()">Calcular</button>
       </div>
       <div class="form-group">
 
         <h2>Selecciona tu opcion: </h2>
-        <input type="radio" name="operacion" id="suma" value="suma" (click)="sumar()">Suma
+        <input type="radio" name="operacion" value="suma" [(ngModel)]="operacion"> Suma
         <br>
-        <input type="radio" name="operacion" id="resta" value="resta" ((click))="restar()">resta
+        <input type="radio" name="operacion" value="resta" [(ngModel)]="operacion">resta
         <br>
-        <input type="radio" name="operacion" id="multiplicacion" value="Multi" ((click))="multi()">Multiplicacion
+        <input type="radio" name="operacion" value="Multi" [(ngModel)]="operacion">Multiplicacion
         <br>
-        <input type="radio" name="operacion" id="division" value="division" ((click))="division()"> Division
+        <input type="radio" name="operacion" value="division" [(ngModel)]="operacion"> Division
       </div>
     </div>
   </div>

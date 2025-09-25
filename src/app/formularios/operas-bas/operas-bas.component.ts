@@ -7,23 +7,30 @@ import { Component } from '@angular/core';
   styleUrl: './operas-bas.component.css'
 })
 export class OperasBasComponent {
-  num1: string = "";
-  num2: string = "";
-  res: string = "";
+  num1: number = 0;
+  num2: number = 0;
+  res: number = 0;
+  operacion: string = 'suma';
 
-  sumar():void{
-    this.res=(parseInt(this.num1) + parseInt(this.num2)).toString();
-    alert("tu resultado es: " +this.res)
-  }
-  restar():void{
-    this.res=(parseInt(this.num1) - parseInt(this.num2)).toString();
-    alert("tu resultado es: " +this.res)
-  }
-  multi():void{
-    this.res=(parseInt(this.num1) * parseInt(this.num2)).toString();
-  }
-  division():void{
-    this.res=(parseInt(this.num1) / parseInt(this.num2)).toString();
+  Calcula(): void {
+    switch (this.operacion) {
+      case "suma":
+        this.res = this.num1 + this.num2;
+        break;
+      case "resta":
+        this.res = this.num1 - this.num2;
+        break;
+      case "Multi":
+        this.res = this.num1 * this.num2;
+        break;
+      case "division":
+        this.res = this.num1 / this.num2;
+        break;
+
+      default:
+        alert("dato no valido")
+        break;
+    }
   }
 }
 
