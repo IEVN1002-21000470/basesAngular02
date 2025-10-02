@@ -1,0 +1,40 @@
+.negro {
+  background-color: black;
+  color: white;
+}
+.marron {
+  background-color: brown;
+  color: white;
+}
+.rojo {
+  background-color: red;
+  color: white;
+}
+.naranja {
+  background-color: orange;
+  color: black;
+}
+.amarillo {
+  background-color: yellow;
+  color: black;
+}
+.verde {
+  background-color: green;
+  color: white;
+}
+.azul {
+  background-color: blue;
+  color: white;
+}
+.violeta {
+  background-color: purple;
+  color: white;
+}
+.gris {
+  background-color: gray;
+  color: white;
+}
+.blanco {
+  background-color: white;
+  color: black;
+}

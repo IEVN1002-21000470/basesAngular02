@@ -1,9 +1,192 @@
-<table class="">
-  <tr>
-    <td>1</td>
-    <td>2</td>
-    <td>3</td>
-    <td>4</td>
-    <td>5</td>
-  </tr>
-</table>
+<div class="container py-5">
+  <h1 class="text-center mb-4">Calculadora de Resistencia</h1>
+
+  <div class="row g-4">
+    <div class="col-md-4">
+      <div class="card shadow-sm">
+        <div class="card-body">
+          <h5 class="text-center">Banda 1</h5>
+          <table border="2" class="table table-bordered text-center">
+            <tr>
+              <td class="negro">
+                <input type="radio" name="R1" [value]="0" [(ngModel)]="Banda1"> Negro
+              </td>
+            </tr>
+            <tr>
+              <td class="marron">
+                <input type="radio" name="R1" [value]="1" [(ngModel)]="Banda1"> Marrón
+              </td>
+            </tr>
+            <tr>
+              <td class="rojo">
+                <input type="radio" name="R1" [value]="2" [(ngModel)]="Banda1"> Rojo
+              </td>
+            </tr>
+            <tr>
+              <td class="naranja">
+                <input type="radio" name="R1" [value]="3" [(ngModel)]="Banda1"> Naranja
+              </td>
+            </tr>
+            <tr>
+              <td class="amarillo">
+                <input type="radio" name="R1" [value]="4" [(ngModel)]="Banda1"> Amarillo
+              </td>
+            </tr>
+            <tr>
+              <td class="verde">
+                <input type="radio" name="R1" [value]="5" [(ngModel)]="Banda1"> Verde
+              </td>
+            </tr>
+            <tr>
+              <td class="azul">
+                <input type="radio" name="R1" [value]="6" [(ngModel)]="Banda1"> Azul
+              </td>
+            </tr>
+            <tr>
+              <td class="violeta">
+                <input type="radio" name="R1" [value]="7" [(ngModel)]="Banda1"> Violeta
+              </td>
+            </tr>
+            <tr>
+              <td class="gris">
+                <input type="radio" name="R1" [value]="8" [(ngModel)]="Banda1"> Gris
+              </td>
+            </tr>
+            <tr>
+              <td class="blanco">
+                <input type="radio" name="R1" [value]="9" [(ngModel)]="Banda1"> Blanco
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card shadow-sm">
+        <div class="card-body">
+          <h5 class="text-center">Banda 2</h5>
+          <table border="2" class="table table-bordered text-center">
+            <tr>
+              <td class="negro"><input type="radio" name="R2" [value]="0" [(ngModel)]="Banda2"> Negro</td>
+            <tr>
+              <td class="marron"><input type="radio" name="R2" [value]="1" [(ngModel)]="Banda2"> Marrón</td>
+            </tr>
+            <tr>
+              <td class="rojo"><input type="radio" name="R2" [value]="2" [(ngModel)]="Banda2"> Rojo</td>
+            </tr>
+            <tr>
+              <td class="naranja"><input type="radio" name="R2" [value]="3" [(ngModel)]="Banda2"> Naranja</td>
+            </tr>
+            <tr>
+              <td class="amarillo"><input type="radio" name="R2" [value]="4" [(ngModel)]="Banda2"> Amarillo</td>
+            </tr>
+            <tr>
+              <td class="verde"><input type="radio" name="R2" [value]="5" [(ngModel)]="Banda2"> Verde</td>
+            </tr>
+            <tr>
+              <td class="azul"><input type="radio" name="R2" [value]="6" [(ngModel)]="Banda2"> Azul</td>
+            </tr>
+            <tr>
+              <td class="violeta"><input type="radio" name="R2" [value]="7" [(ngModel)]="Banda2"> Violeta</td>
+            </tr>
+            <tr>
+              <td class="gris"><input type="radio" name="R2" [value]="8" [(ngModel)]="Banda2"> Gris</td>
+            </tr>
+            <tr>
+              <td class="blanco"><input type="radio" name="R2" [value]="9" [(ngModel)]="Banda2"> Blanco</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card shadow-sm">
+        <div class="card-body">
+          <h5 class="text-center">Banda 3</h5>
+          <table border="2" class="table table-bordered text-center">
+            <tr>
+              <td class="negro"><input type="radio" name="R3" [value]="0" [(ngModel)]="Banda3"> x1</td>
+            </tr>
+            <tr>
+              <td class="marron"><input type="radio" name="R3" [value]="1" [(ngModel)]="Banda3"> x10</td>
+            </tr>
+            <tr>
+              <td class="rojo"><input type="radio" name="R3" [value]="2" [(ngModel)]="Banda3"> x100</td>
+            </tr>
+            <tr>
+              <td class="naranja"><input type="radio" name="R3" [value]="3" [(ngModel)]="Banda3"> x1000</td>
+            </tr>
+            <tr>
+              <td class="amarillo"><input type="radio" name="R3" [value]="4" [(ngModel)]="Banda3"> x10000</td>
+            </tr>
+            <tr>
+              <td class="verde"><input type="radio" name="R3" [value]="5" [(ngModel)]="Banda3"> x100000</td>
+            </tr>
+            <tr>
+              <td class="azul"><input type="radio" name="R3" [value]="6" [(ngModel)]="Banda3"> x1000000</td>
+            </tr>
+            <tr>
+              <td class="violeta"><input type="radio" name="R3" [value]="7" [(ngModel)]="Banda3"> x10000000</td>
+            </tr>
+            <tr>
+              <td class="gris"><input type="radio" name="R3" [value]="8" [(ngModel)]="Banda3"> x100000000</td>
+            </tr>
+            <tr>
+              <td class="blanco"><input type="radio" name="R3" [value]="9" [(ngModel)]="Banda3"> x1000000000</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card shadow-sm">
+        <div class="card-body">
+          <h5 class="text-center">Tolerancia</h5>
+          <table class="table table-bordered text-center">
+            <tr>
+              <td><input type="radio" name="Tol" value="oro" [(ngModel)]="Tolerancia"> Oro 5</td>
+              <td><input type="radio" name="Tol" value="plata" [(ngModel)]="Tolerancia"> Plata 10</td>
+            </tr>
+          </table>
+          <div class="text-center mt-3">
+            <button class="btn btn-primary" (click)="procesar()">Procesar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="mt-5">
+    <h3>Resultados</h3>
+    <table class="table table-bordered text-center">
+      <thead class="table-light">
+        <tr>
+          <th>Color 1</th>
+          <th>Color 2</th>
+          <th>Color 3</th>
+          <th>Tolerancia</th>
+          <th>Valor</th>
+          <th>Valor Max</th>
+          <th>Valor Min</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            {{Color1}}</td>
+          <td>
+            {{Color2}}</td>
+          <td>
+            {{Color3}}</td>
+          <td>{{ToleranciaColor}}</td>
+          <td>{{Valor}}</td>
+          <td>{{Valor_maxi}}</td>
+          <td>{{Valor_mini}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

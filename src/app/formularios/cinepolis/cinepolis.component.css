@@ -1,6 +1,12 @@
 .color-Texto{
   color: #ffffff;
-  font-size: 35px;
+  font-size: 25px;
+  font-family: cursive;
+}
+
+.color-Texto2{
+  color: #000000;
+  font-size: 25px;
   font-family: cursive;
 }
 

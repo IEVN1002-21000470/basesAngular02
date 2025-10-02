@@ -7,15 +7,15 @@
         <h5 class="card-title color-Texto">Contendor Entradas</h5>
         <div class="card h-100 shadow-sm card-transparente">
           <div class="card-body">
-            <label class="card-title">Nombre: </label><br>
+            <label class="card-title color-Texto">Nombre: </label><br>
             <input type="text" class="form-control" id="nombre" [(ngModel)]="nombre" name="nombre"
               placeholder="Ingresa tu nombre"><br>
-            <label for="" class="card-title">Cantidad Compradores: </label><br>
+            <label for="" class="card-title color-Texto">Cantidad Compradores: </label><br>
             <input type="number" class="form-control" id="CantidadCompradores" [(ngModel)]="CantidadCompradores"><br>
-            <label for="" class="card-title">Tarjeta cineco </label><br>
+            <label for="" class="card-title color-Texto">Tarjeta cineco </label><br>
             <input type="radio" id="" value="Si" [(ngModel)]="Operacion_si_no">Si<br>
             <input type="radio" id="" value="No" [(ngModel)]="Operacion_si_no">No<br>
-            <label for="" class="card-title">Cantidad de boletos</label><br>
+            <label for="" class="card-title color-Texto">Cantidad de boletos</label><br>
             <input type="number" class="form-control" [(ngModel)]="CantidadBoletos">
 
           </div>
@@ -26,9 +26,9 @@
         <h5 class="card-title color-Texto"> contenedor Salidas</h5>
         <div class="card h-100 shadow-sm card-transparente">
           <div class="card-body">
-            <label for="" class="card-title">Valor a Pagar: </label><br>
-            <h2>$: {{ValorPagar}}</h2>
-            <input type="number" class="form-control" [(ngModel)]="ValorPagar" id="ID_Pago">
+            <label for="" class="card-title color-Texto2">Valor a Pagar: </label><br>
+            <h2 class="color-Texto2">$: {{ValorPagar}} </h2>
+            <!--<input type="number" class="form-control" [(ngModel)]="ValorPagar" id="ID_Pago">-->
           </div>
         </div>
       </div>
